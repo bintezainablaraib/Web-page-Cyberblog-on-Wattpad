@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wattpad breach</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://variety.com/wp-content/uploads/2021/01/Wattpad-logo.png?w=681&h=383&crop=1&resize=681%2C383"width="200" height="310" alt="Logo">
+      <h1>Wattpad Breach 2020</h1>
+  </header>
+
+  <header class="modes-header">
+    <div class="modes">
+      <button id="dark-mode-toggle">Dark Mode</button>
+      <button id="text-only-toggle">Text Only Mode</button>
+      <button id="battery-optimized-toggle">Battery Optimized Mode</button>
+    </div>
+  </header>
+  <main>
+    <img src="https://izoologic.com/wp-content/uploads/2020/07/20200723-wattpaddatabreach.jpg"width="1300" alt="Image 1">
+    <h3>
+        In June 2020, online storytelling platform Wattpad suffered a major data breach, affecting millions of its users. 
+    </h3>
+    <section>
+        <h2>What happened in the Wattpad breach attack?</h2>
+        <div style="display: flex; flex-wrap: wrap;">
+          <img src="https://surfshark.com/wp-content/uploads/2021/07/breaches.png" width="50%" height="380" alt="Image 1">
+          <img src="https://www.hackread.com/wp-content/uploads/2020/07/hacker-leaks-271-million-wattpad-accounts-on-hacker-forum-2-1024x688.jpg" width="50%" height="380" alt="Image 2">
+        </div>
+        <h5>Overview:</h5>
+        <h4>In June 2020, Wattpad, an online storytelling platform, suffered a significant data breach that compromised the personal information of millions of its users. The data breach occurred when an unauthorized third party gained access to Wattpad's database and obtained sensitive user data, including email addresses, usernames, passwords, and other personal information. As a result, affected users were put at risk of identity theft, fraud, and other malicious activities. The attack had a severe impact on Wattpad's reputation, as it undermined the trust that users had placed in the platform to keep their personal information safe.
+         <p> In response to the data breach, Wattpad took swift action to investigate the incident and notify all affected users to change their passwords and take other security measures to protect their accounts. The company also worked closely with law enforcement agencies to identify the perpetrators of the attack and bring them to justice. Despite these efforts, the damage had already been done, and many users had lost faith in Wattpad's ability to protect their personal information. </p></h4>
+        <div style="display: flex; flex-wrap: wrap;">
+          <img src="https://www.bleepstatic.com/images/news/security/d/data-breaches/wattpad/wattpad-forum.jpg" width="50%" height="450" alt="Image 2">
+          <img src="https://www.hackread.com/wp-content/uploads/2020/07/hacker-leaks-271-million-wattpad-accounts-on-hacker-forum-1.jpg" width="50%" height="450" alt="Image 2">
+        </div>
+        <h5>Impact:</h5>
+        <h4>The Wattpad breach in 2020 had a significant impact on the platform's users. With millions of users affected, the breach put their personal information at risk, leaving them vulnerable to identity theft, phishing attacks, and other types of cybercrime. The stolen data included email addresses, usernames, passwords, and other personal information, which could be used to access other online accounts if users had used the same login credentials for multiple services.
+          The breach also caused a loss of trust in Wattpad's security measures among its users. Many users were left feeling uncertain about the safety of their personal information and questioned the platform's ability to protect their data. This could have resulted in users losing confidence in the platform and may have deterred new users from joining.         
+          <p> Moreover, the incident put a dent in Wattpad's reputation, with the company being criticized for its slow response in notifying users of the breach. The company initially only sent an email to affected users, which some users may have missed or ignored. There were also concerns that the company may not have been transparent about the extent of the breach, and that it may have downplayed the severity of the incident. </p></h4>
+        </section>
+  <footer>
+    <p>&copy; WattPad Breach Attack 2020. All rights reserved.</p>
+  </footer>
+  </main>
+</body>
+</html>
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const textOnlyToggle = document.getElementById('text-only-toggle');
+    const batteryOptimizedToggle = document.getElementById('battery-optimized-toggle');
+
+
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+    textOnlyToggle.addEventListener('click', toggleTextOnlyMode);
+    batteryOptimizedToggle.addEventListener(toggleBatteryOptimizedMode);
+
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    }
+
+    function toggleTextOnlyMode() {
+        const body = document.body;
+        body.classList.toggle('text-only-mode');
+    }
+
+    function toggleBatteryOptimizedMode() {
+        var element = document.body;
+            element.classList.toggle("battery-optimized-mode");
+        }
+    function checkBatteryLevel() {
+        navigator.getBattery().then(function(battery) {
+            var batteryLevel = battery.level * 100;
+            if (batteryLevel < 10) {
+                toggleBatteryOptimizedMode();
+            }
+        });
+    }
+</script>

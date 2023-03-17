@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0a;
+  padding: 20px;
+}
+
+header img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.modes-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 14px;
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.modes {
+  margin-left: auto;
+  
+}
+
+.modes button {
+  margin-right: 10px;
+  border: none;
+  color: #3d3d3d;
+  background-color: #e0e0e0;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+h2 {
+  margin-top: -0.5rem;
+  margin-bottom: -0.2rem;
+
+
+}
+h5{
+  font-size: 2.2rem;
+  font-size: 1.4rem;
+  margin-top: -0.1rem;
+  margin-bottom: 0.5rem;
+
+}
+h3 {
+    font-size: 2.2rem;
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+    margin-bottom: 5rem;
+    font-weight: lighter;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  font-weight: lighter;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #333;
+}
+
+.text-only-mode img {
+  display: none;
+}
+
+.text-only-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+.battery-optimized-mode {
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  align-items: right;
+  background-color: #0a0a0a;
+  color:white;
+  padding: 20px;
+}
